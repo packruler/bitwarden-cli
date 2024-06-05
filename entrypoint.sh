@@ -9,7 +9,7 @@ fi
 
 bw config server ${BW_HOST}
 
-bw login --apikey
+bw login --apikey --raw
 
 export BW_SESSION=$(bw unlock --passwordenv BW_PASSWORD --raw)
 
