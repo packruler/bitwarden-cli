@@ -2,8 +2,8 @@
 
 set -e
 
-if [[ -z "${BW_HOST}" || -z "${BW_CLIENTID}" || -z "${BW_CLIENTSECRET}" ]]; then
-  echo "Please set 'BW_HOST', 'BW_CLIENTID', and 'BW_CLIENTSECRET' environment variable"
+if [[ -z "${BW_HOST}" || -z "${BW_CLIENTID}" || -z "${BW_CLIENTSECRET}" || -z "${BW_PASSWORD}" ]]; then
+  echo "Please set 'BW_HOST', 'BW_CLIENTID', 'BW_CLIENTSECRET', and 'BW_PASSWORD' environment variables"
   exit 1
 fi
 
